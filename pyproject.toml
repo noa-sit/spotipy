@@ -1,0 +1,12 @@
+[project]
+name = "spotify-sync"
+version = "0.1.0"
+requires-python = ">=3.14"
+dependencies = [
+    "customtkinter>=6.0.0",
+    "mutagen>=1.48.1",
+    "pillow>=13.0.0",
+    "python-dotenv>=1.2.4",
+    "requests>=2.34.2",
+    "spotipy>=2.26.0",
+]
