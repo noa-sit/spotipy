@@ -1,0 +1,16 @@
+# Secrets et jetons
+.env
+.cache
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+
+# Donnees locales
+tracks.db
+settings.json
+mp3/
+
+# Executables
+*.exe
