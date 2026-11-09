@@ -29,7 +29,7 @@ Un script Python qui synchronise un dossier local `mp3/` avec votre playlist **T
 ### Dépendances Python
 
 ```bash
-pip install spotipy yt-dlp python-dotenv
+uv sync
 ```
 
 ---
@@ -40,7 +40,7 @@ pip install spotipy yt-dlp python-dotenv
 2. Dans *Edit Settings*, ajoutez l'URI de redirection :
 
 ```
-http://localhost:8080
+http://127.0.0.1:8080/callback
 ```
 
 3. Récupérez `Client ID` et `Client Secret`.
@@ -52,7 +52,7 @@ Créez un fichier `.env` contenant :
 ```env
 SPOTIPY_CLIENT_ID="VOTRE_CLIENT_ID_SPOTIFY"
 SPOTIPY_CLIENT_SECRET="VOTRE_CLIENT_SECRET_SPOTIFY"
-SPOTIPY_REDIRECT_URI="http://localhost:8080"
+SPOTIPY_REDIRECT_URI="http://127.0.0.1:8080/callback"
 ```
 ---
 
@@ -89,4 +89,3 @@ Spotify-MP3-Sync/
 ├── mp3/              
 └── tracks.db          
 ```
-
